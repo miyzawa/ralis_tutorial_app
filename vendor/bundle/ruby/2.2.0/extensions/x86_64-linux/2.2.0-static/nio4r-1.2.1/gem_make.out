@@ -1,0 +1,13 @@
+/usr/local/rbenv/versions/2.2.2/bin/ruby -r ./siteconf20170126-11249-1uiu0iy.rb extconf.rb 
+checking for unistd.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl()... yes
+checking for sys/select.h... yes
+checking for poll.h... yes
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+Text file busy @ unlink_internal - ./siteconf20170126-11249-1uiu0iy.rb

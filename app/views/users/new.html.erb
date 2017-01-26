@@ -1,0 +1,31 @@
+<% provide(:title, 'Sign up') %>
+<h1>新規登録のお手続き</h1>
+
+<div class="row">   
+<div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= f.label :name, "新規登録者のなまえ"%>
+</br>
+      <%= f.text_field :name , class: 'form-control'%>
+</br>
+      <%= f.label :email, "新規登録者のいーめーる"%>
+</br>
+      <%= f.email_field :email , class: 'form-control'%>
+
+</br>
+      <%= f.label :pass, "新規登録者のパスワード"%>
+</br>
+      <%= f.password_field :pass, class: 'form-control'%>
+
+</br>
+      <%= f.label :pass_confirmation, "もういちど同じパスワードをにゅうりょくしてね" %>
+</br>
+      <%= f.password_field :pass_confirmation , class: 'form-control'%>
+</br>
+</br>
+      <%= f.submit "登録★", class: "btn btn-primary" %>
+</br>
+</br>
+    <% end %>
+  </div>
+</div>

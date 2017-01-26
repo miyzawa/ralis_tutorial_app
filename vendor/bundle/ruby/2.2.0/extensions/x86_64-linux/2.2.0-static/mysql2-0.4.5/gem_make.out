@@ -1,0 +1,24 @@
+/usr/local/rbenv/versions/2.2.2/bin/ruby -r ./siteconf20170126-11249-8rrsge.rb extconf.rb 
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+checking for rb_big_cmp()... yes
+-----
+Using mysql_config at /usr/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for SSL_MODE_DISABLED in mysql.h... no
+checking for MYSQL_OPT_SSL_ENFORCE in mysql.h... no
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting libpath to /usr/lib64/mysql
+-----
+creating Makefile
+
+Text file busy @ unlink_internal - ./siteconf20170126-11249-8rrsge.rb
