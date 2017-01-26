@@ -1,7 +1,0 @@
-/usr/local/rbenv/versions/2.2.2/bin/ruby -r ./siteconf20170126-11249-3957wo.rb extconf.rb 
-checking for BIO_read() in -lcrypto... yes
-checking for SSL_CTX_new() in -lssl... yes
-checking for openssl/bio.h... yes
-creating Makefile
-
-Text file busy @ unlink_internal - ./siteconf20170126-11249-3957wo.rb
