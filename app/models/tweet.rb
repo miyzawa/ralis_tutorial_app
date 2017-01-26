@@ -1,3 +1,3 @@
 class Tweet < ApplicationRecord
-  has_one :user
+ belongs_to :users
 end
