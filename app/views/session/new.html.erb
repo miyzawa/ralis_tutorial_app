@@ -6,14 +6,11 @@
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :いーめーる%>
-      <%= f.email_field :いーめーる, class: 'form-control' %>
-      
+      <%= f.email_field :email, class: 'form-control' %>
       </br>
-
       <%= f.label :ぱすわーど%>
-      <%= f.password_field :ぱすわーど, class: 'form-control' %>
+      <%= f.password_field :pass, class: 'form-control' %>
       </br>
-
       <%= f.submit "ろぐいん（´・ω・`）", class: "btn btn-primary" %>
     <% end %>
 

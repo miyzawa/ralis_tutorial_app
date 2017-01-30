@@ -12,8 +12,12 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new
     @tweet.title = params[:tweet][:title]
     @tweet.content = params[:tweet][:content]
-    @tweet.save
-    redirect_to '/tweets/index'
+    @tweet.user_id = 1
+    if @tweet.save
+      redirect_to '/tweets/index'
+    else
+      redirect_to '/users/1'
+    end
   end
 
 end
