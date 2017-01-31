@@ -50,3 +50,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ENV['NOKOGIRI_USE_SYSTEM_LIBRARIES'] = 'YES'
 gem 'nokogiri', '~> 1.6.1'
 gem 'sprockets', '~> 3.0'
+
+gem 'bootstrap-sass'
+gem 'sass-rails', '~>5.0'
