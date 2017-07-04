@@ -1,0 +1,31 @@
+<% provide(:title, @user.name) %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+  </br>
+</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3"> 
+    <%= form_for @user.tweets.build do |f_tweets| %>
+      <%= f_tweets.label :title, "たいとる"%>
+      <%= f_tweets.text_field :title, class: 'form-control'%>
+      </br>
+      <%= f_tweets.label :content, "ないよー"%>
+      <%= f_tweets.text_area :content, class: 'form-control'%>
+
+      <%= f_tweets.hidden_field :user_id, value: @user.id %>
+      </br></br>
+      <%= f_tweets.submit :"ついーと！（`・ω・´）", class: "btn btn-primary"%>
+    <% end %>
+    </br></br></br>
+    <table border=1>
+      <td colspan=2><h3><%= @user.name %> さんのついーと一覧</h3></td>
+      <% @user.tweets.each do |tweet| %>
+        <tr>
+          <td><%= tweet.title%></td>
+          <td><%= tweet.content%></td>
+        </tr>
+      <% end %>
+      <table>
+  </div>
+</div>
